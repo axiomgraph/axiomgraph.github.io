@@ -2,30 +2,409 @@
 <html>
   <style>
 body {
-  background-image: url('background.jpg');background-size: cover;opacity: 0.5;
+  background-color: rgb(245, 245, 245);background-size: cover;
 
 }
-   h1  {
+   a  {
        font-family:  "Lucida Console", "Courier New", monospace;
-       text-align: center;
-       color: black;
-    font-size: 120px;
-    margin:60px;
+       text-align: left;
+       color: white;
+       font-size: 35px;
+    font-size: 1.5vw;
+    margin: 30px;
+     width: 12.0vw;
+     padding: 12px;
+     background-color: black;
+     text-decoration: none;
+     text-decoration: none;
+     display: inline-block;
     
    } 
    
    p   {
     font-family:  "Lucida Console", "Courier New", monospace;
-    text-align: center;
-    color: black; 
-    font-size: 50px;
+    text-align: left;
+    color: rgb(19, 19, 19); 
+    font-size: 100%;
+    font-size: 1.5vw;
     margin: 30px;
+    display: inline-block;
+    padding:12px;
    }
+
+ 
+* {box-sizing: border-box;border-radius: 12px}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+ 
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  text-align: left;
+  background-color: black;
+  width: fit-content;
+  margin-left: 10px;
+}
+
+/* Number text (1/10 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 15px}
+}
+.download {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  color: white;
+  width: fit-content;
+ display: inline-block;
+ transform: translate(41.3vw,0.0vw);
+ background-image: linear-gradient(to right,rgb(146, 0, 243), rgb(194, 17, 185));
+ transition: transform 2.5s;
+ opacity: 0.6;
+  transition: 0.3s;
+}
+.download:hover{
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  color: white;
+  width: fit-content;
+ display: inline-block;
+ transform: translate(41.3vw,0.0vw);
+ background-image: linear-gradient(to right,rgb(146, 0, 243), rgb(194, 17, 185));
+ opacity: 1.0;
+}
 </style> 
 <body>
 
-<h1>Axiom Graph</h1>
-<p>For future purpose</p>
+<a href="https://axiomgraph.github.io/">Axiom Graph</a>
+<p>Enve plugins</p>
+
+<div class="slideshow-container">
+ 
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 10</div>
+    <img src="images/2color.png" style="width:100%">
+    <div class="text">2 Color Effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 41</div>
+    <img src="images/2d_grid.png" style="width:100%">
+    <div class="text">2D Grid</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 41</div>
+    <img src="images/8bit.png" style="width:100%">
+    <div class="text">8 Bit Effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 41</div>
+    <img src="images/anamorphic.png" style="width:100%">
+    <div class="text">Anamorphic</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 41</div>
+    <img src="images/anamorphic2.png" style="width:100%">
+    <div class="text">Anamorphic</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 41</div>
+    <img src="images/barreldistortion.png" style="width:100%">
+    <div class="text">Barrel Distortion </div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 41</div>
+    <img src="images/blackandwhite.png" style="width:100%">
+    <div class="text">Black And White</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 41</div>
+    <img src="images/blobs.png" style="width:100%">
+    <div class="text">Blobs</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 41</div>
+    <img src="images/bloom.png" style="width:100%">
+    <div class="text">Bloom</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 41</div>
+    <img src="images/buldge.png" style="width:100%">
+    <div class="text">Bulge Effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">11 / 41</div>
+    <img src="images/circlepixel.png" style="width:100%">
+    <div class="text">Circle Pixel</div>
+  </div>
+ 
+  <div class="mySlides fade">
+    <div class="numbertext">12 / 41</div>
+    <img src="images/circularblur.png" style="width:100%">
+    <div class="text">Circular Blur</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">13 / 41</div>
+    <img src="images/colorcorrection.png" style="width:100%">
+    <div class="text">Color Correction</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">14 / 41</div>
+    <img src="images/crop.png" style="width:100%">
+    <div class="text">Crop Effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">15 / 41</div>
+    <img src="images/crosshatch.png" style="width:100%">
+    <div class="text">Crosshatch Effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">16 / 41</div>
+    <img src="images/directionalblur.png" style="width:100%">
+    <div class="text">Directional Blur</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">17 / 41</div>
+    <img src="images/edgedetect.png" style="width:100%">
+    <div class="text">Edge Detect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">18 / 41</div>
+    <img src="images/engrave.png" style="width:100%">
+    <div class="text">Engrave Effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">19 / 41</div>
+    <img src="images/fire.png" style="width:100%">
+    <div class="text">Fire</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">20 / 41</div>
+    <img src="images/flame.png" style="width:100%">
+    <div class="text">Flame Effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">21 / 41</div>
+    <img src="images/flip.png" style="width:100%">
+    <div class="text">Flip</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">22 / 41</div>
+    <img src="images/fractal.png" style="width:100%">
+    <div class="text">Engrave Effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">23 / 41</div>
+    <img src="images/fractal2.png" style="width:100%">
+    <div class="text">Fractal</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">24 / 41</div>
+    <img src="images/glitch.png" style="width:100%">
+    <div class="text">Glitch Effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">25 / 41</div>
+    <img src="images/invert.png" style="width:100%">
+    <div class="text">Invert Color</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">26 / 41</div>
+    <img src="images/lensblur.png" style="width:100%">
+    <div class="text">Lensblur</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">27 / 41</div>
+    <img src="images/noise.png" style="width:100%">
+    <div class="text">Create Noise</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">28 / 41</div>
+    <img src="images/noiseblur.png" style="width:100%">
+    <div class="text">Noise Blur</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">29 / 41</div>
+    <img src="images/pixelate.png" style="width:100%">
+    <div class="text">Pixelate Effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">30 / 41</div>
+    <img src="images/plasma.png" style="width:100%">
+    <div class="text">Plasma Effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">31 / 41</div>
+    <img src="images/posterize.png" style="width:100%">
+    <div class="text">Posterize Effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">32 / 41</div>
+    <img src="images/prismring.png" style="width:100%">
+    <div class="text">Prism Ring</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">33 / 41</div>
+    <img src="images/radialblur.png" style="width:100%">
+    <div class="text">Radial Blur</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">34 / 41</div>
+    <img src="images/rgbsplit.png" style="width:100%">
+    <div class="text">RGB Split</div>
+  </div> <div class="mySlides fade">
+    <div class="numbertext">35 / 41</div>
+    <img src="images/ripple.png" style="width:100%">
+    <div class="text">Ripple Effect</div>
+  </div>
+     <div class="mySlides fade">
+    <div class="numbertext">36 / 41</div>
+    <img src="images/stars.png" style="width:100%">
+    <div class="text">Create Stars</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">37 / 41</div>
+    <img src="images/swirl.png" style="width:100%">
+    <div class="text">Swirl effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">38 / 41</div>
+    <img src="images/toonify.png" style="width:100%">
+    <div class="text">Toonify Effect</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">39 / 41</div>
+    <img src="images/water turbul.png" style="width:100%">
+    <div class="text">Water turbulence</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">40 / 41</div>
+    <img src="images/wave lines.png" style="width:100%">
+    <div class="text">Wave lines</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">41 / 41</div>
+    <img src="images/waves.png" style="width:100%">
+    <div class="text">Waves Effect</div>
+  </div>
+    </div>
+  <br>
+   
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+    <span class="dot"></span>  
+
+  </div>
+  <a class="download" href="https://github.com/axiomgraph/enve-plugins">Download Link</a>
+
+
+
 
 </body>
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < 41; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 3 seconds
+  }
+  </script>
 </html> 
